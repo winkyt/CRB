@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:style="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
 
     <meta charset="utf-8">
@@ -8,21 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <meta property="og:url"           content="https://cdn.rawgit.com/johnsoRiB/SoccerInThePNW/fe3f22fe/soccerinthepnw.html" />
-    <meta property="og:type"          content="Columbia River Basin" />
-    <meta property="og:title"         content="Columbia River Basin" />
-    <meta property="og:description"   content="a case study of the Columbia River Basin, including its history, major negotiations of water management, and some dam projects on the basin" />
-    <meta property="og:image"         content="img/social.PNG" />
-
-    <title>Columbia River Basin</title>
-
-    <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <title>Freelancer - Start Bootstrap Theme</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,985 +23,530 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" >
-    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css">
-    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css">
-
-    <link rel="stylesheet" href="dist/MarkerCluster.css" />
-    <link rel="stylesheet" type="text/css" href="css/d3.timeline.event-horizon.css" />
-
-    <!--add favicon-->
-    <link rel="shortcut icon" href="img/water.png" type="image/x-icon">
-
-    <script src="dist/leaflet.markercluster-src.js"></script>
-    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
-    <script src="https://cdn.bootcss.com/chroma-js/1.3.3/chroma.min.js"></script>
-
-    <!--timeline-->
-    <script type="text/javascript" src="lib/d3.min.js"></script>
-    <script type="text/javascript" src="js/d3.timeline.event-horizon.min.js"></script>
-
-
-
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 </head>
 
-< id="page-top" class="index">
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
-<!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand" href="#page-top">PNW -- Columbia River Basin</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#portfolio">The Basin</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#about">Info
-                    </a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#major event">Major Event
-                    </a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
-
-<!-- Header -->
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <img class="img-responsive" src="img/orriver.jpg" alt="Vista House at the basin">
-                <div class="intro-text">
-                    <span class="name">Columbia River Basin in Pacific Northwest</span>
-                    <hr class="star-light">
-                    <span class="skills">Yingqi Tang | tangy@oregonstate.edu | Oregon State University</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- Portfolio Grid Section -->
-<section id="portfolio">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-
-                <h2>The Basin</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                            <p>History</p>
-                        </div>
-                    </div>
-                    <img src="img/crportfolio/overview.jpg" height="900" width="650"class="img-responsive" alt="">
-                </a>
-
-            </div>
-                <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                            <p>Treaty</p>
-                        </div>
-                    </div>
-                    <img src="img/crportfolio/treaty.jpg" height="900" width="650"class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                            <p>Tribe</p>
-                        </div>
-                    </div>
-                    <img src="img/crportfolio/tirbe2.jpg" height="900" width="650" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                            <p>Dam</p>
-                        </div>
-                    </div>
-                    <img src="img/crportfolio/hydropower.jpg" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                            <p>Management</p>
-                        </div>
-                    </div>
-                    <img src="img/crportfolio/management.jpg" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                            <p>Future</p>
-                        </div>
-                    </div>
-                    <img src="img/crportfolio/future.jpg" class="img-responsive" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Info Section -->
-<section class="success" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Info</h2>
-                <hr class="star-light">
-            </div>
-        </div>
-        <div class="row">
-            <div class="text">
-                <p>Region: The Pacific North West of North America<br><br> Countries and States(Provinces): Canada| British Columbia; The United States| Idaho, Oregon, Washington, Montana, Nevada, Utah, and Wyoming <br><br> Coverage: 668,000 sq kilomete or 258,000 sq mile <br><br> Type of Environment: alpine and subalpine environments, montane forests, lava fields, semiarid grasslands, and low-elevation rainforests <br><br> Dam: 60 dams in the watershed with 14 on the main stream<br><br>Challenge: planning and management <br><br> Issue: hydroelectric dams, environment, and Native American culture
-                </p>
-            </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="line" id="major event">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-            </div>
-        </div>
-        <div class="'col-lg-12 text-center">
-        <h2>Major Event</h2>
-            <hr class="star-light">
-            </div>
-               <div id="timeline"></div>
-            </div>
-
-            </a>
-        </div>
-    </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Contact Me</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="text-center">
-                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                            <p>Yingqi Tang | Oregon State University</p>
-                            <p>Geography M.S. Candidate</p>
-                            <p>Email: tangy@oregonstate.edu</p>
-                            <P>Location: Covallis, Oregon</P>
-                        </div>
-                    </div>
-                    <br>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Footer -->
-<footer class="text-center">
-    <div class="footer-above">
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
-            <div class="row">
-                <div class="footer-col col-md-4">
-                    <h3>About Leaflet</h3>
-                    <p>an open-source JavaScript library for mobile-friendly interactive maps <a href="http://leafletjs.com/">Leaflet</a>.</p>
-                </div>
-                <div class="footer-col col-md-4">
-                    <h3>Around the Web</h3>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcdn.rawgit.com%2FjohnsoRiB%2FSoccerInThePNW%2Ffe3f22fe%2Fsoccerinthepnw.html" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/intent/tweet?text=https://cdn.rawgit.com/johnsoRiB/SoccerInThePNW/fe3f22fe/soccerinthepnw.html" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="footer-col col-md-4">
-                    <h3>About Freelancer</h3>
-                    <p>Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                </div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
             </div>
-        </div>
-    </div>
-    <div class="footer-below">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    Copyright &copy; Cartography and Geovisualization Group at Oregon State University
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-    <a class="btn btn-primary" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-    </a>
-</div>
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center>
-                    <section data-scene="overview">
-                <h2>River History</h2>
-                <div id="map" style="width: 100%; height: 450px; position:initial"></div>
-                <h3><small style="color:black">Map Source:USGS, StreamNet</h3>
-                <br>
-
-                <p>Economic projects, such as dams for hydropower development, is a popular choice among countries with abundant water resources. When the United States faced the Great Depression at the 1930s, constructing dams on Columbia River fulfilled the need for employment. It completed two dams, the Bonneville Dam and Grand Coulee Dam. Later, more dams have been built on the basin.</p>
-                <img src="img/crportfolio/history1.jpg" class="img-centered" style="width:60%; height:400px; alt="responsive image" alt-text="the flag of oregon">
-                <h3><small style="color:black">Celilo Falls<br>Source:http://www.columbiarivergorge.info/history.html</h3>
-
-                <img src="img/crportfolio/history2.jpg" class="img-centered" style="width:60%; height:400px; alt="responsive image" alt-text="the flag of oregon">
-                <h3><small style="color:black">Cascade Locks<br>Source:http://www.columbiarivergorge.info/history.html</h3>
-
-                <img src="img/crportfolio/Bonneville.jpg" class="img-centered" style="width:60%; height:400px; alt="responsive image" alt-text="the flag of oregon">
-                <h3><small style="color:black">Bonneville Dam Consturstion Site at 1936<br>Source:The Oregon Encyclopedia</h3>
-
-                <p>In 1948, Vanport city was dramatically destroyed at 4:05 p.m. on May 30, 1948, when a 200-foot (61 m) section of the dike holding back the Columbia River collapsed during a flood, killing 15. The city was underwater by nightfall leaving its inhabitants homeless. </p>
-
-                <img src="img/crportfolio/Vanport1.jpg" class="img-centered" style="width:60%; height:400px; alt="responsive image" alt-text="the flag of oregon">
-                <h3><small style="color:black">Flood 1948<br>Source:The Vanport Wikipedia site</h3>
-                <br>
-                <img src="img/crportfolio/Vanport2.jpg" class="img-centered" style="width:60%; height:400px; alt="responsive image" alt-text="the flag of oregon">
-                <h3><small style="color:black">Flood 1948<br>Source:The Vanport Wikipedia site</h3>
-
-
-                </section>
-                <ul class="list-inline item-details">
-                    <li>Client:
-                        <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                        </strong>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
                     </li>
-                    <li>Info:
-                        <strong><a href="https://en.wikipedia.org/wiki/Seattle_Sounders_FC">Wikipedia</a>
-                        </strong>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
                     </li>
-                    <li>Map:
-                        <strong><a href="https://www.mapbox.com/maps/">Mapbox</a>
-                        </strong>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
-                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
-    </div>
-</div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <h1 class="name">Start Bootstrap</h1>
+                        <hr class="star-light">
+                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                    </div>
                 </div>
             </div>
         </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
         <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="Cabin">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cake.png" class="img-responsive" alt="Slice of cake">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/circus.png" class="img-responsive" alt="Circus tent">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="Game controller">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/safe.png" class="img-responsive" alt="Safe">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="Submarine">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Theme
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Columbia River Treaty</h2>
-                        <div id="map2" style="width: 100%; height: 450px; position:initial"></div>
-                        <h3><small style="color:black">Map source:GRanD Database</h3>
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="message">Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
                         <br>
-                        <h4>Key Term of Columbia River Treaty</h4>
-                        <img src="img/crportfolio/treaty1.jpg" class="img-centered" style="width:60%; height:400px; alt="responsive image" alt-text="the flag of oregon">
-                        <h3><small style="color:black">Source:GeekPortland</h3>
-                        <br>
-                        <h1>Canada agreed to build <strong>three dams</strong> with 15.5 million acre feet (maf) of storage and coordinate the operation of these new storage facilities with the U.S. hydroelectric power supply system in order to <strong>optimize hydroelectric power production and to provide flood control</strong>. The effect of these storage reservoirs is to move the annual flooding from the downriver areas to the upper Columbia Basin.</h1>
-                        <br>
-                        <h1>Canada guaranteed 8.45 maf (increased later to 8.95 maf) of flood control space in the three reservoirs to <strong>reduce flooding risks</strong> in the U.S. Additional storage space is “on call” in the Canadian reservoirs to help control large floods in the U.S.</h1>
-                        <br>
-                        <h1>Canada is entitled to 50% (Canadian Entitlement) of the additional power generated in the U.S. because of the new Canadian storage (additional power generated is “downstream benefits”).</h1>
-                        <br>
-                        <h1>Canada sold the first 30 years of the Canadian Entitlement to a U.S. consortium for almost $254 million. The U.S. now delivers the Canadian Entitlement to BC in both energy (approximately 500 average megawatts) and peak capacity (approximately 1,200 megawatts). BC largely sells this power on the Westwide wholesale power market, annual value of $150 million to $300 million depending on power prices.</h1>
-                        <br>
-                        <h1>The U.S. was allowed to build Libby Dam, with 5 maf of storage, with 42 miles of the 90-mile long reservoir backing up into Canada. Each country keeps the downstream flood control and power benefits from Libby realized in their country. Termination of the Treaty does not affect the Libby authorization.</h1>
-                        <br>
-                        <h1>The U.S. paid Canada almost $65 million in the 1960s for the flood control benefits from the Canadian projects, representing 50% of the estimated value of the flood control losses avoided in the U.S. from 1968 through September 2024.</h1>
-                        <br>
-                        <h1>After September 2024, if there are no changes to the Treaty, Canada’s obligation to guarantee 8.95 maf of flood control space to the U.S. expires. This is replaced in the Treaty by an obligation on the part of Canada to <strong>provide flood control when “called-upon” in years</strong> when the U.S. cannot effectively manage flood risk with the use of its own projects, with the U.S. paying the costs of the operation. In any event, the U.S. will incur additional costs and obligations in order to receive flood control benefits from Canada.</h1>
-                        <br>
-                        <h1>The construction and operation of the Treaty storage dams has had an <strong>adverse effect</strong> on the fish and wildlife, riparian, water quality, and cultural resources of the Columbia River, effects and values not recognized or addressed in any formal way in the Treaty. Effective Use and Called Upon operations are likely to result in even greater adverse effects on resident and anadromous fish populations, wildlife and cultural resources. If the Treaty is not modernized, there will be significant additional adverse effects on ecosystem function and the spring freshet available for resident and migratory fish and other species will be dramatically reduced.</h1>
-                        <br>
-                        <h1>Under the terms of the Treaty, in order to “call upon” Canada to provide flood control storage after September 2024, the U.S. will first have to operate its reservoirs for “effective use” for flood control. Under this scenario, federal projects, such as Grand Coulee, Dworshak, Brownlee, Libby, Hungry Horse, and other storage reservoirs in the Columbia Basin, may need to operate at much lower elevations in January through May to make room for the spring runoff.</h1>
-                        <br>
-                        <h1>If the Treaty is not terminated or modernized, the U.S. will remain obligated to return the Canadian Entitlement, the Canadian share of the downstream power benefits.</h1>
-                        <br>
-                        <h1>In developing this coordinated system operation under the Treaty with Canada, the U.S. <strong>did not consult with the tribes nor consider the effect of the Treaty on the tribes’ cultural and natural resources</strong>. Not only were the tribes not consulted during the Treaty’s negotiation, the tribes have also been <strong>excluded from its governance and implementation</strong>. The Treaty does not specifically allow for considerations of critical tribal cultural resources. The coordinated power and flood control system created under the Treaty degraded multiple ecosystem functions of rivers, First Foods, natural resources, and tribal customs and identities. The Treaty limits what can be accomplished with non-Treaty water agreements to address these issues and meet tribal resource priorities.</h1>
-                        <br>
-                        <h1>Neither the development nor the implementation of the Treaty have involved the people and communities of the Columbia River Basin in any significant degree. Yet river management decisions under the domestic law and policy of both nations include a high degree of public engagement and involvement. Developing and implementing a modernized Treaty will have to accommodate this change in some fashion.</h1>
-                        <h3 class="text-left">(Text source from Columbia River Inter-Tribal Fish Commission) </h3>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>3481 Melrose Place
+                            <br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
-                            <li>Info:
-                                <strong><a href="https://en.wikipedia.org/wiki/Vancouver_Whitecaps_FC">Wikipedia</a>
-                                </strong>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
                             </li>
-                            <li>Map:
-                                <strong><a href="https://www.mapbox.com/maps/">Mapbox</a>
-                                </strong>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribbble"></i></a>
                             </li>
                         </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Your Website 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <div id="map" style="position:absolute" ></div>
+                            <hr class="star-primary">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2" text-center>
-                    <div class="modal-body">
-                        <h4>Tribes in the Basin</h4>
-                        <div id="map3" style="width: 100%; height: 450px; position:initial"></div>
-                        <h3><small style="color:black">Map source:U.S. Census, USGS</h3>
-                        <br>
-                        <p>Fifteen tribes locate in the Columbia River Basin. Tribal communities face the problem of high unemployment and poverty. Salmon is a significant economic activity for Native American. Also, Salmon are part of the tribes’ spiritual and culture identity. For many tribes’ members in the Basin area, they still prefer fishing for livelihood.</p>
-                        <p>First Food -- Salmon are one of the traditional “First Foods” that are honored at tribal ceremonies. The other First Foods are wild game, roots, berries, and pure water.</p>
-                        <img src="img/crportfolio/firstfood.jpg" class="img-centered" style="width:80%; height:400px; alt="responsive image" alt-text="the flag of oregon">
-                        <h3><small style="color:black">A traditional salmon bake outside the Museum at Warm Springs<br> source:Terry Richard/The Oregonian</h3>
-
-                        <img src="img/crportfolio/indainfish.jpg" class="img-centered" style="width:80%; height:400px; alt="responsive image" alt-text="the flag of oregon">
-                        <h3><small style="color:black">1930s painting of Indians fishing at Celilo Falls, as they had for thousands of years prior to white settlement of the Oregon Country.<br> source:WyEast Blog</h3>
-
-                        <img src="img/crportfolio/indainfish2.jpg" class="img-centered" style="width:80%; height:400px; alt="responsive image" alt-text="the flag of oregon">
-                        <h3><small style="color:black"> Indians fishing Celilo Falls with dip nets in the early 1900s, prior to construction of dams at Bonneville and The Dalles.<br> source:WyEast Blog</h3>
-
-                        <img src="img/crportfolio/indianfish3.jpg" class="img-centered" style="width:80%; height:400px; alt="responsive image" alt-text="the flag of oregon">
-                        <h3><small style="color:black">1930s rendering of Indian fisherman working the narrows below Celilo Falls<br> source:WyEast Blog</h3>
-
-                        <p>Besides the impacts from the 1964 treaty, climate change is another significant factor to treat the river health and the tribal community. In the treaty review section, climate adaptation plan is a new factor to consider and a way to ensure to match the tribal interests.</p>
-
-                        <iframe src="https://player.vimeo.com/video/36951241?color=a6a6a6&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        <p><a href="https://vimeo.com/36951241">Facing Climate Change: Plateau Tribes</a> from <a href="https://vimeo.com/bdsjs">Benjamin Drummond + Sara Steele</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                        <p></p>
-
-
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
-                            </li>
-                            <li>Info:
-                                <strong><a href="https://en.wikipedia.org/wiki/Portland_Timbers">Wikipedia</a>
-                                </strong>
-                            </li>
-                            <li>Map:
-                                <strong><a href="https://www.mapbox.com/maps/">Mapbox</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Dam and Fish</h2>
-                        <div id="map4" style="width: 100%; height: 450px; position:initial"></div>
-                        <h3><small style="color:black">Map source:GRanD Database</h3>
-
-                        <p>The Columbia River mainstream has total fourteen dams. Between the deep gorges, the significant elevation gradient provides prime conditions for salmon survival and reproduction. Also, the great slope change offers excellent condition for hydropower projects. The construction of hydropower dams affects the salmon population at mainstream and Snake River tributary.<br>
-                            Dams alter salmon’s migration routes and speeds. Even though fish ladders aside dams can provide a way back to upstream, adult salmons need to navigate around to find the path((2013). For this project, it mainly focuses on the impacts of dams at the mainstream and the four lower Snake River dam because they have significant impacts on salmon survival. The ongoing salmon restoration plans indicate the goal of “a healthy river ”, and it is a major topic for the re-negotiation of Columbia River Treaty.
-                        </p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
-                            </li>
-                            <li>Info:
-                                <strong><a href="https://en.wikipedia.org/wiki/Cascadia_Cup">Wikipedia: Cascadia Cup</a>
-                                    <a href="https://en.wikipedia.org/wiki/Canadian_Championship"> Wikipedia: Canadian Championship</a>
-                                </strong>
-                            </li>
-                            <li>Map:
-                                <strong><a href="https://www.mapbox.com/maps/">Mapbox</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Events in the Basin</h2>
-                        <div id="map5" style="width: 100%; height: 450px; position:initial"></div>
-                        <h3><small style="color:black">Map source:Transboundary Water Database from Dr. Aaron Wolf | Oregon State University</h3>
-
-                        <p>Cooperation of the Columbia River Basin from all stakeholders is necessary for climate change adaption, flood control, and the sustainable economic growth. Since Native America has a long history to understand the water, taking their opinion into the treaty negotiation opens an opportunity to indigenous people to develop their shared resources, and reduce conflicts for future water management.
-                        </p>
-                        <p>If the treaty does not terminate, the U.S. will continue its obligation to pay Canada. Canada will remain its duty of flood control. Nonetheless, the treaty signed 53 years ago, if we do not modernize the treaty with proper adjustment and consider new conditions of water management, there will be more significant negative impacts on the ecosystem, salmon population, and tribal economy and culture.  Termination of the treaty would affect flood control on the massive river, hydropower dam operation, electricity rates, water flows, irrigation system, and fishing</p>
-
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
-                            </li>
-                            <li>Info:
-                                <strong><a href="https://en.wikipedia.org/wiki/National_Women's_Soccer_League">Wikipedia: NWSL</a>
-                                    <a href="https://en.wikipedia.org/wiki/Seattle_Reign_FC"> Wikipedia: Reign FC</a>
-                                    <a href="https://en.wikipedia.org/wiki/Portland_Thorns_FC"> Wikipedia: Thorns FC</a>
-                                </strong>
-                            </li>
-                            <li>Map:
-                                <strong><a href="https://www.mapbox.com/maps/">Mapbox</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>The Future of Transboundary Water Management </h2>
-                        <div id="map6" style="width: 100%; height: 450px; position:initial"></div>
-                        <p></p>
-                        <p></p>
-                        <p>Soccer in the Pacific Northwest continues to grow in popularity. The three major teams the Seattle Sounders FC, Vancouver Whitecaps FC, and Portland Timbers have helped establish a rich soccer culture that is unlike any other in the United States. However, while we continue to support these three teams it is important to recognize that we should also support our more local teams as well. This map provides a glance at the expanse of soccer in the Pacific Northwest. Included in this are all the Professional and Amateur Men's and Women's teams and where they play in the Pacific Northwest.</p>
-                        <p>Universities and colleges are included in this map because of the significance that college sports has in American culture. However, due to limitations only universities and colleges that have both and men's and women's program are included as well as colleges that offer 4-year degrees. While, community colleges are not displayed on this map it is important to note the many community colleges have soccer programs for both men and/or women.</p>
-                        <P>While only a very small percentage of people will go on to play professional soccer, everyone has the opportunity to be apart of the sport by either supporting local teams or perhaps joining a local team and playing on the pitch.</P>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
-                            </li>
-                            <li>Info:
-                                <strong><a href="https://en.wikipedia.org/wiki/United_States_soccer_league_system">Wikipedia: Soccer In The US</a>
-                                </strong>
-                            </li>
-                            <li>Map:
-                                <strong><a href="https://www.mapbox.com/maps/">Mapbox</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free i!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
- <!--&lt;!&ndash;jQuery &ndash;&gt;-->
-<!--<script src="vendor/jquery/jquery.min.js"></script>-->
-<!--&lt;!&ndash; Bootstrap Core JavaScript &ndash;&gt;-->
-<!--<script src="vendor/bootstrap/js/bootstrap.min.js"></script>-->
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+        <script>
 
-<!--&lt;!&ndash; Plugin JavaScript &ndash;&gt;-->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
-
-<!-- Contact Form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
-<!-- Theme JavaScript -->
-<script src="js/freelancer.min.js"></script>
-<script type="text/javascript">
-
-
-    $(document).ready(function(){
-
-        var context = [
-            { 'name': 'Boundary Water Treaty', 'start': 1909, 'end': 1909 },
-            { 'name': 'Bonneville Dam', 'start': 1937, 'end': 1937 },
-            { 'name': 'The Dalles Dam', 'start': 1957, 'end': 1957 },
-            { 'name': 'John Day Dam', 'start': 1971, 'end': 1971 },
-            { 'name': 'McNavy Dam', 'start': 1954, 'end': 1954 },
-            { 'name': 'Prest Rapids Dam; Rocky Reach Dam', 'start': 1961, 'end': 1961 },
-            { 'name': 'Wanapum Dam', 'start': 1963, 'end': 1963 },
-            { 'name': 'Rock Island Dam', 'start': 1933, 'end': 1933 },
-            { 'name': 'Wells Dam', 'start': 1967, 'end': 1967 },
-            { 'name': 'Chief Joseph Dam', 'start': 1955, 'end': 1955 },
-            { 'name': 'Grand Coulee Dam', 'start': 1941, 'end': 1941 },
-            { 'name': 'Keenleyside Dam', 'start': 1968, 'end': 1968 },
-            { 'name': 'Revelstoke Dam', 'start': 1984, 'end': 1984 },
-            { 'name': 'Mica Dam', 'start': 1973, 'end': 1973 },
-            { 'name': 'IJC study', 'start': 1944, 'end': 1944 },
-            { 'name': 'International Columbia River Engineering Board(ICREB) ', 'start': 1945, 'end': 1945 },
-            { 'name': 'Flood', 'start': 1948, 'end': 1948 },
-            { 'name': 'The ICREB delivers its technical reports to the IJC', 'start': 1959, 'end': 1959 },
-            { 'name': 'Termination Process(?)', 'start': 2014, 'end': 2014 },
-            { 'name': 'The End of Columbia River Treaty(?)', 'start': 2024, 'end': 2024 },
-        ];
-
-        var event = {
-            'start': 1961,
-            'end': 2024,
-            'echo': 1964,
-            'echo_prefix': 'singed',
-            'start_prefix': 'Columbia River Treaty Negotiation ',
-            'end_prefix': '',
-        };
-
-        var tl = new timeline("timeline", context);
-        tl.draw(event);
-
-        $(window).resize(function(){
-            tl.redraw();
-        });
-
-    });
-
-
-    (function() {
-        var ev = new $.Event('style'),
-            orig = $.fn.css;
-        $.fn.css = function() {
-            $(this).trigger(ev);
-            return orig.apply(this, arguments);
-        }
-    })();
-
-    var map = L.map('map', {center: [47.875255, -116.872495], zoom: 5});
-    L.tileLayer('https://api.mapbox.com/styles/v1/winkyt/cj3ggctze00162rq9b6vsoq51/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lua3l0IiwiYSI6ImNqMjhhZWI4cjAwbzAycW1tYWxsa3VibzEifQ.Zze2mKeLBpZql6xFILyq0g', {
-        maxZoom: 7,
-        attribution: '<a target="https://www.mapbox.com/maps/">Mapbox</a>',
-        id: 'mapbox.streets',
-        detectRetina: true
-    }).addTo(map);
-    //L.geoJson.ajax('assets/SoundersHistory.geojson').addTo(map);
-
-    $('#portfolioModal1').bind('style', function(e) {
-        map.invalidateSize();
-        $("body").css({'padding-right': "0px"});
-        // $(".Text").css('margin-top', vertAlign);
-    });
-
-    var map2 = L.map('map2', {center: [49.5, -117.064], zoom:6 });
-    L.tileLayer('https://api.mapbox.com/styles/v1/winkyt/cj33gxkml003h2qpk7n6xc6rk/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lua3l0IiwiYSI6ImNqMjhhZWI4cjAwbzAycW1tYWxsa3VibzEifQ.Zze2mKeLBpZql6xFILyq0g', {
-        maxZoom: 18,
-        attribution: '<a target="https://www.mapbox.com/maps/">Mapbox</a>',
-        id: 'mapbox.streets',
-        detectRetina: true
-    }).addTo(map2);
-    //L.geoJson.ajax('assets/WhitecapsHistory.geojson').addTo(map2);
-
-    $('#portfolioModal2').bind('style', function(e) {
-        map2.invalidateSize();
-        console.log( $(this).attr('style') );
-    });
-
-    var map3 = L.map('map3', {center: [47.875255, -116.872495], zoom: 5});
-    L.tileLayer('https://api.mapbox.com/styles/v1/winkyt/cj33gxkml003h2qpk7n6xc6rk/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lua3l0IiwiYSI6ImNqMjhhZWI4cjAwbzAycW1tYWxsa3VibzEifQ.Zze2mKeLBpZql6xFILyq0g', {
-        maxZoom: 18,
-        attribution: '<a target="https://www.mapbox.com/maps/">Mapbox</a>',
-        id: 'mapbox.streets',
-        detectRetina: true
-    }).addTo(map3);
-    //L.geoJson.ajax('assets/TimbersHistory.geojson').addTo(map3);
-
-    $('#portfolioModal3').bind('style', function(e) {
-        map3.invalidateSize();
-        //console.log( $(this).attr('style') );
-    });
-
-    var map4 = L.map('map4', {center: [47.875255, -116.872495], zoom: 6});
-    L.tileLayer('https://api.mapbox.com/styles/v1/winkyt/cj3ggctze00162rq9b6vsoq51/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lua3l0IiwiYSI6ImNqMjhhZWI4cjAwbzAycW1tYWxsa3VibzEifQ.Zze2mKeLBpZql6xFILyq0g', {
-        maxZoom: 18,
-        attribution: '<a target="https://www.mapbox.com/maps/">Mapbox</a>',
-        id: 'mapbox.streets',
-        detectRetina: true
-    }).addTo(map4);
-    //L.geoJson.ajax('assets/CascadiaCup.geojson').addTo(map4);
-    //L.geoJson.ajax('assets/CanadianCup.geojson').addTo(map4);
-
-    $('#portfolioModal4').bind('style', function(e) {
-        map4.invalidateSize();
-        //console.log( $(this).attr('style') );
-    });
-
-    var map5 = L.map('map5', {center: [47.875255, -116.872495], zoom: 5});
-    L.tileLayer('https://api.mapbox.com/styles/v1/winkyt/cj33gxkml003h2qpk7n6xc6rk/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lua3l0IiwiYSI6ImNqMjhhZWI4cjAwbzAycW1tYWxsa3VibzEifQ.Zze2mKeLBpZql6xFILyq0g', {
-        maxZoom: 18,
-        attribution: '<a target="https://www.mapbox.com/maps/">Mapbox</a>',
-        id: 'mapbox.streets',
-        detectRetina: true
-    }).addTo(map5);
-    //L.geoJson.ajax('assets/NWSL.geojson').addTo(map5);
-    //L.geoJson.ajax('assets/NWSL_Expansion.geojson').addTo(map5);
-
-    $('#portfolioModal5').bind('style', function(e) {
-        map5.invalidateSize();
-        //console.log( $(this).attr('style') );
-    });
-
-    var map6 = L.map('map6', {center: [47.875255, -116.872495], zoom: 5});
-   L.tileLayer('https://api.mapbox.com/styles/v1/winkyt/cj33gxkml003h2qpk7n6xc6rk/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lua3l0IiwiYSI6ImNqMjhhZWI4cjAwbzAycW1tYWxsa3VibzEifQ.Zze2mKeLBpZql6xFILyq0g', {
-        maxZoom: 18,
-        attribution: '<a target="https://www.mapbox.com/maps/">Mapbox</a>',
-        id: 'mapbox.streets',
-        detectRetina: true,
-    }).addTo(map6);
-
-
-
-    var river = L.geoJson.ajax('asset/mainriver.geojson', {
-        pointToLayer: function (feature, latlng) {
-
-            delay = 0;
-            //delay =Math.floor(Math.random() * 400);
-
-            return L.marker(latlng, {bounceOnAdd: true,  bounceOnAddOptions: {duration: 200, height: window.innerHeight, delay:delay}, icon: L.divIcon({className: 'glyphicon glyphicon-tint marker-icon'})});
-        },
-
-    });
-    river.addTo(map);
-
-    var river1 = L.geoJson.ajax('asset/sideriver.geojson', {
-        pointToLayer: function (feature, latlng) {
-
-            delay = 0;
-            //delay =Math.floor(Math.random() * 400);
-
-            return L.marker(latlng, {bounceOnAdd: true,  bounceOnAddOptions: {duration: 200, height: window.innerHeight, delay:delay}, icon: L.divIcon({className: 'glyphicon glyphicon-tint marker-icon-9'})});
-        },
-
-    });
-    river1.addTo(map);
-
-    $('html > head').append($("<style> .marker-icon { color: lightskyblue; font-size: 30px; text-shadow: 0 0 3px #ffffff;} </style>"));
-    var treatydam = L.geoJson.ajax('asset/treatydam.geojson', {
-        onEachFeature: function (feature, layer) {
-            layer.bindTooltip(feature.properties.DAM_NAME + "<br />" + feature.properties.COUNTRY+ "<br />" + feature.properties.YEAR+ "<br />" +feature.properties.MAIN_USE);
-            },
-        pointToLayer: function (feature, latlng) {
-
-            delay = 0;
-            //delay =Math.floor(Math.random() * 400);
-
-            return L.marker(latlng, {bounceOnAdd: true,  bounceOnAddOptions: {duration: 200, height: window.innerHeight, delay:delay}, icon: L.divIcon({className: 'glyphicon glyphicon-tint marker-icon'})});
-        },
-
-    });
-    treatydam.addTo(map2);
-
-    var tribe = L.geoJson.ajax('asset/CRBrec.geojson',  {
-        color: 'red',
-        weight: 2,
-        opacity: 0.5});
-    tribe.addTo(map3);
-
-    var triberiver = L.geoJson.ajax('asset/mainriver.geojson',  {
-        color: '#74a9cf',
-        weight: 2,
-        opacity: 0.4});
-    triberiver.addTo(map3);
-
-    var triberiver1 = L.geoJson.ajax('asset/sideriver.geojson',  {
-        color: '#74a9cf',
-        weight: 2,
-        opacity: 0.4});
-    triberiver1.addTo(map3);
-
-
-    var quality = chroma.scale('Set2').mode('lch').colors(7);
-    for (i =1; i < 8; i++) {
-        $('html > head').append($("<style> .marker-icon-" + i.toString() + " { color: " + quality[i] + "; font-size: 15px; text-shadow: 0 0 1px #000000;} </style>"));
+(function() {
+    var ev = new $.Event('style'),
+        orig = $.fn.css;
+    $.fn.css = function() {
+        $(this).trigger(ev);
+        return orig.apply(this, arguments);
     }
-    var dams_quality = L.geoJson.ajax('asset/dam.geojson', {
-        pointToLayer: function (feature, latlng) {
-            if (feature.properties.ADMIN_UNIT === "British Columbia") {
-                return L.marker(latlng, {icon: L.divIcon({className: 'glyphicon glyphicon-tint marker-icon-1'})});
-            } else if (feature.properties.ADMIN_UNIT === "Idaho") {
-                return L.marker(latlng, {icon: L.divIcon({className: 'glyphicon glyphicon-tint marker-icon-2'})});
-            } else if (feature.properties.ADMIN_UNIT === "Montana") {
-                return L.marker(latlng, {icon: L.divIcon({className: 'glyphicon glyphicon-tint marker-icon-3'})});
-            } else if (feature.properties.ADMIN_UNIT === "Oregon") {
-                return L.marker(latlng, {icon: L.divIcon({className: 'glyphicon glyphicon-tint marker-icon-4'})});
-            } else if (feature.properties.ADMIN_UNIT === "Washington") {
-                return L.marker(latlng, {icon: L.divIcon({className: 'glyphicon glyphicon-tint marker-icon-5'})});
-            } else if (feature.properties.ADMIN_UNIT === "Wyoming") {
-                return L.marker(latlng, {icon: L.divIcon({className: 'glyphicon glyphicon-tint marker-icon-6'})});
-            } else {
-                return L.marker(latlng, {icon: L.divIcon({className: 'glyphicon glyphicon-tint marker-icon-7'})});
-            }
-        },
-        onEachFeature: function (feature, layer) {
-            layer.bindTooltip(feature.properties.DAM_NAME + "<br />" + feature.properties.COUNTRY+ "<br />" + feature.properties.YEAR+ "<br />" +feature.properties.MAIN_USE, {sticky: true, className: "feature-tooltip"});
-        }
-    });
+})();
 
-    dams_quality.addTo(map4);
+var map = L.map('map', {center: [44.56576, -123.27888], zoom: 16});
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
 
 
-    $('html > head').append($("<style> .marker-icon-8 { color: darkorange; font-size: 20px; text-shadow: 0 0 3px #ffffff;} </style>"));
-    var event = L.geoJson.ajax('asset/event.geojson', {
-        onEachFeature: function (feature, layer) {
-            layer.bindTooltip(feature.properties.DATE + "<br />" + feature.properties.EVENT_SUMMARY);
-        },
-        pointToLayer: function (feature, latlng) {
+$('#portfolioModal1').bind('style', function(e) {
+    map.invalidateSize();
+});
 
-            delay = 0;
-            //delay =Math.floor(Math.random() * 400);
-
-            return L.marker(latlng, {bounceOnAdd: true,  bounceOnAddOptions: {duration: 200, height: window.innerHeight, delay:delay}, icon: L.divIcon({className: 'glyphicon glyphicon-bullhorn marker-icon-8'})});
-        },
-
-    });
-    event.addTo(map5);
-
-    var legend = L.control({position: 'topright'});
-
-    // Function that runs when legend is added to map
-    legend.onAdd = function () {
-
-        // Create Div Element and Populate it with HTML
-        var div = L.DomUtil.create('div', 'legend');
-        div.innerHTML += '<b>Dams of 1964 treaty</b><br />';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon"></i>';
-
-        // Return the Legend div containing the HTML content
-        return div;
-    };
-    // Add Legend to Map
-    legend.addTo(map2);
-
-    var legend2 = L.control({position: 'topright'});
-
-    // Function that runs when legend is added to map
-    legend2.onAdd = function () {
-
-        // Create Div Element and Populate it with HTML
-        var div = L.DomUtil.create('div', 'legend');
-        div.innerHTML += '<b>NWSL</b><br />';
-        div.innerHTML += '<img src="img/portfolio/purpleball.png" height="18px" width="18px"><p>Current Team</p>';
-        div.innerHTML += '<img src="img/portfolio/pinkball.png" height="18px" width="18px"><p>Expansion Team</p>';
-        // Return the Legend div containing the HTML content
-        return div;
-    };
-    // Add Legend to Map
-    legend2.addTo(map5);
-
-    var legend3 = L.control({position: 'topright'});
-
-    // Function that runs when legend is added to map
-    legend3.onAdd = function () {
-
-        // Create Div Element and Populate it with HTML
-        var div = L.DomUtil.create('div', 'legend');
-        div.innerHTML += '<b>State/Province</b><br />';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-1"></i><p>British Columbia</p>';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-2"></i><p>Idaho</p>';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-3"></i><p>Montana</p>';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-4"></i><p>Oregon</p>';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-5"></i><p>Washington</p>';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-6"></i><p>Wyoming</p>';
-
-
-
-        // Return the Legend div containing the HTML content
-        return div;
-    };
-    // Add Legend to Map
-    legend3.addTo(map4);
-
-    L.control.scale({position: 'bottomleft'}).addTo(map);
-    L.control.scale({position: 'bottomleft'}).addTo(map2);
-    L.control.scale({position: 'bottomleft'}).addTo(map3);
-    L.control.scale({position: 'bottomleft'}).addTo(map4);
-    L.control.scale({position: 'bottomleft'}).addTo(map5);
-    L.control.scale({position: 'bottomleft'}).addTo(map6);
-
-    var markers = L.markerClusterGroup({
-        maxClusterRadius: 120,
-        iconCreateFunction: function (cluster) {
-            var markers = cluster.getAllChildMarkers();
-            var n = 0;
-            for (var i = 0; i < markers.length; i++) {
-                n += markers[i].number;
-            }
-            return L.divIcon({ html: n, className: 'mycluster', iconSize: L.point(40, 40) });
-        },
-        //Disable all of the defaults:
-        spiderfyOnMaxZoom: false, showCoverageOnHover: false, zoomToBoundsOnClick: false
-    });
-    function populate() {
-        for (var i = 0; i < 100; i++) {
-            var m = L.marker(getRandomLatLng(map6), { title: i });
-            m.number = i;
-            markers.addLayer(m);
-        }
-        return false;
-    }
-    function populateRandomVector() {
-        for (var i = 0, latlngs = [], len = 20; i < len; i++) {
-            latlngs.push(getRandomLatLng(map6));
-        }
-        var path = L.polyline(latlngs);
-        map6.addLayer(path);
-    }
-    function getRandomLatLng(map) {
-        var bounds = map.getBounds(),
-            southWest = bounds.getSouthWest(),
-            northEast = bounds.getNorthEast(),
-            lngSpan = northEast.lng - southWest.lng,
-            latSpan = northEast.lat - southWest.lat;
-        return L.latLng(
-            southWest.lat + latSpan * Math.random(),
-            southWest.lng + lngSpan * Math.random());
-    }
-    populate();
-    map6.addLayer(markers);
-    var shownLayer, polygon;
-    function removePolygon() {
-        if (shownLayer) {
-            shownLayer.setOpacity(1);
-            shownLayer = null;
-        }
-        if (polygon) {
-            map6.removeLayer(polygon);
-            polygon = null;
-        }
-    };
-    markers.on('clustermouseover', function (a) {
-        removePolygon();
-        a.layer.setOpacity(0.2);
-        shownLayer = a.layer;
-        polygon = L.polygon(a.layer.getConvexHull());
-        map.addLayer(polygon);
-    });
-    markers.on('clustermouseout', removePolygon);
-    map6.on('zoomend', removePolygon);
-
-
-
-</script>
+        </script>
 
 </body>
 
 </html>
-
