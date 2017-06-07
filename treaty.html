@@ -81,8 +81,7 @@
                     </a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#major event">Major Events
-                    </a>
+                    <a href="#major event">Major Events</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#contact">Contact</a>
@@ -494,8 +493,7 @@
                         <div id="map4" style="width: 100%; height: 450px; position:initial"></div>
                         <h3>Map source:GRanD Database</h3>
 
-                        <p class="text-left">The Columbia River mainstream has total fourteen dams. Between the deep gorges, the significant elevation gradient provides prime conditions for salmon survival and reproduction. Also, the great slope change offers excellent condition for hydropower projects. The construction of hydropower dams affects the salmon population at mainstream and Snake River tributary.<br>
-                            Dams alter salmon’s migration routes and speeds. Even though fish ladders aside dams can provide a way back to upstream, adult salmons need to navigate around to find the path((2013). For this project, it mainly focuses on the impacts of dams at the mainstream and the four lower Snake River dam because they have significant impacts on salmon survival. The ongoing salmon restoration plans indicate the goal of “a healthy river ”, and it is a major topic for the re-negotiation of Columbia River Treaty.
+                        <p class="text-left">The Columbia River mainstream has fourteen dams in total. Between the deep gorges, the significant elevation gradient provides prime conditions for salmon survival and reproduction. The great slope also offers excellent conditions for hydropower projects. However, the construction of hydropower dams affects the salmon population in the mainstream and Snake River tributary. Dams alter salmon’s migration routes and speeds. Even though fish ladders beside dams can provide a way back upstream, adult salmon need to navigate around to find the path
                         </p>
                         <img src="img/crportfolio/lonelyfish.jpg" class="img-centered" style="width:80%; height:400px; alt="responsive image" alt-text="CRB"><P>A lonely fish</P>
                         <h3>Source:Yingqi Tang</h3>
@@ -743,7 +741,7 @@
     });
 
     var map2 = L.map('map2', {center: [49.5, -117.064], zoom:6 });
-    L.tileLayer('https://api.mapbox.com/styles/v1/winkyt/cj33gxkml003h2qpk7n6xc6rk/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lua3l0IiwiYSI6ImNqMjhhZWI4cjAwbzAycW1tYWxsa3VibzEifQ.Zze2mKeLBpZql6xFILyq0g', {
+    L.tileLayer('https://api.mapbox.com/styles/v1/winkyt/cj3ggctze00162rq9b6vsoq51/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lua3l0IiwiYSI6ImNqMjhhZWI4cjAwbzAycW1tYWxsa3VibzEifQ.Zze2mKeLBpZql6xFILyq0g', {
         maxZoom: 18,
         attribution: '<a target="https://www.mapbox.com/maps/">Mapbox</a>',
         id: 'mapbox.streets',
@@ -757,7 +755,7 @@
     });
 
     var map3 = L.map('map3', {center: [47.875255, -116.872495], zoom: 5});
-    L.tileLayer('https://api.mapbox.com/styles/v1/winkyt/cj33gxkml003h2qpk7n6xc6rk/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lua3l0IiwiYSI6ImNqMjhhZWI4cjAwbzAycW1tYWxsa3VibzEifQ.Zze2mKeLBpZql6xFILyq0g', {
+    L.tileLayer('https://api.mapbox.com/styles/v1/winkyt/cj3ggctze00162rq9b6vsoq51/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lua3l0IiwiYSI6ImNqMjhhZWI4cjAwbzAycW1tYWxsa3VibzEifQ.Zze2mKeLBpZql6xFILyq0g', {
         maxZoom: 18,
         attribution: '<a target="https://www.mapbox.com/maps/">Mapbox</a>',
         id: 'mapbox.streets',
@@ -786,7 +784,7 @@
     });
 
     var map5 = L.map('map5', {center: [46.875255, -116.872495], zoom: 6});
-    L.tileLayer('https://api.mapbox.com/styles/v1/winkyt/cj33gxkml003h2qpk7n6xc6rk/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lua3l0IiwiYSI6ImNqMjhhZWI4cjAwbzAycW1tYWxsa3VibzEifQ.Zze2mKeLBpZql6xFILyq0g', {
+    L.tileLayer('https://api.mapbox.com/styles/v1/winkyt/cj3ggctze00162rq9b6vsoq51/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2lua3l0IiwiYSI6ImNqMjhhZWI4cjAwbzAycW1tYWxsa3VibzEifQ.Zze2mKeLBpZql6xFILyq0g', {
         maxZoom: 18,
         attribution: '<a target="https://www.mapbox.com/maps/">Mapbox</a>',
         id: 'mapbox.streets',
@@ -820,11 +818,19 @@
     //L.geoJson.ajax('assets/Other.geojson').addTo(map6);
     //L.geoJson.ajax('assets/Indoor.geojson').addTo(map6);
 
+
     $('#portfolioModal6').bind('style', function(e) {
         map6.invalidateSize();
         //console.log( $(this).attr('style') );
     });
 
+
+    var facilityIcon = L.icon({
+        iconUrl: 'img/dot.png',
+        iconSize:     [20, 20],
+        iconAnchor:   [16, 16],
+        popupAnchor:  [-8, -18]
+    });
 
     var river = L.geoJson.ajax('asset/mainriver.geojson',  {
         color: '#74a9cf',
@@ -920,6 +926,10 @@
     event.addTo(map5);
 
 
+
+
+
+
     $('html > head').append($("<style> .marker-icon-9 { color: brown; font-size: 8px; text-shadow: 0 0 3px #ffffff;} </style>"));
     var facility = L.geoJson.ajax('asset/fishfacility.geojson', {
         onEachFeature: function (feature, layer) {
@@ -930,7 +940,7 @@
             delay = 0;
             //delay =Math.floor(Math.random() * 400);
 
-            return L.marker(latlng, {bounceOnAdd: true,  bounceOnAddOptions: {duration: 200, height: window.innerHeight, delay:delay}, icon: L.divIcon({className: 'glyphicon glyphicon-map-marker marker-icon-9'})});
+            return L.marker(latlng, {bounceOnAdd: true,  bounceOnAddOptions: {duration: 200, height: window.innerHeight, delay:delay}, icon: L.divIcon({className: 'glyphicon glyphicon-star marker-icon-9'})});
         },
 
     });
@@ -938,214 +948,214 @@
 
 
 
-    var tribe = L.geoJson.ajax('asset/CRBrec.geojson',  {
-        color: 'red',
-        weight: 2,
-        opacity: 0.5});
-    tribe.addTo(map6);
+            var tribe = L.geoJson.ajax('asset/CRBrec.geojson',  {
+                color: 'red',
+                weight: 2,
+                opacity: 0.5});
+            tribe.addTo(map6);
 
-    var triberiver = L.geoJson.ajax('asset/mainriver.geojson',  {
-        color: '#74a9cf',
-        weight: 2,
-        opacity: 0.4});
-    triberiver.addTo(map6);
+            var triberiver = L.geoJson.ajax('asset/mainriver.geojson',  {
+                color: '#74a9cf',
+                weight: 2,
+                opacity: 0.4});
+            triberiver.addTo(map6);
 
-    var triberiver1 = L.geoJson.ajax('asset/sideriver.geojson',  {
-        color: '#74a9cf',
-        weight: 2,
-        opacity: 0.4});
-    triberiver1.addTo(map6);
+            var triberiver1 = L.geoJson.ajax('asset/sideriver.geojson',  {
+                color: '#74a9cf',
+                weight: 2,
+                opacity: 0.4});
+            triberiver1.addTo(map6);
 
-    var tribe = L.geoJson.ajax('asset/urban.geojson',  {
-        color: 'purple',
-        weight: 2,
-        opacity: 0.5});
-    tribe.addTo(map6);
-
-
-
-
-    var legend = L.control({position: 'topright'});
-
-    // Function that runs when legend is added to map
-    legend.onAdd = function () {
-
-        // Create Div Element and Populate it with HTML
-        var div = L.DomUtil.create('div', 'legend');
-        div.innerHTML += '<b>River</b><br />';
-        div.innerHTML += '<i class="legend legend-custom" style="background:#74a9cf ;"></i>';
-
-        // Return the Legend div containing the HTML content
-        return div;
-    };
-    // Add Legend to Map
-    legend.addTo(map);
+            var tribe = L.geoJson.ajax('asset/urban.geojson',  {
+                color: 'purple',
+                weight: 2,
+                opacity: 0.5});
+            tribe.addTo(map6);
 
 
 
 
+            var legend = L.control({position: 'topright'});
 
+            // Function that runs when legend is added to map
+            legend.onAdd = function () {
 
-    var legend1 = L.control({position: 'topright'});
+                // Create Div Element and Populate it with HTML
+                var div = L.DomUtil.create('div', 'legend');
+                div.innerHTML += '<b>River</b><br />';
+                div.innerHTML += '<i class="legend legend-custom" style="background:#74a9cf ;"></i>';
 
-    // Function that runs when legend is added to map
-    legend1.onAdd = function () {
-
-        // Create Div Element and Populate it with HTML
-        var div = L.DomUtil.create('div', 'legend');
-        div.innerHTML += '<b>Dams of 1964 treaty</b><br />';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon"></i>';
-
-        // Return the Legend div containing the HTML content
-        return div;
-    };
-    // Add Legend to Map
-    legend1.addTo(map2);
-
-
-    var legend2 = L.control({position: 'topright'});
-
-    // Function that runs when legend is added to map
-    legend2.onAdd = function () {
-
-        // Create Div Element and Populate it with HTML
-        var div = L.DomUtil.create('div', 'legend');
-        div.innerHTML += '<b>Events</b><br />';
-        div.innerHTML += '<i class= "glyphicon glyphicon-bullhorn marker-icon-8">';
-
-        // Return the Legend div containing the HTML content
-        return div;
-    };
-    // Add Legend to Map
-    legend2.addTo(map5);
-
-    var legend3 = L.control({position: 'topright'});
-
-    // Function that runs when legend is added to map
-    legend3.onAdd = function () {
-
-        // Create Div Element and Populate it with HTML
-        var div = L.DomUtil.create('div', 'legend');
-        div.innerHTML += '<b>State/Province</b><br />';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-1"></i><p>British Columbia</p>';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-2"></i><p>Idaho</p>';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-3"></i><p>Montana</p>';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-4"></i><p>Oregon</p>';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-5"></i><p>Washington</p>';
-        div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-6"></i><p>Wyoming</p>';
+                // Return the Legend div containing the HTML content
+                return div;
+            };
+            // Add Legend to Map
+            legend.addTo(map);
 
 
 
-        // Return the Legend div containing the HTML content
-        return div;
-    };
-    // Add Legend to Map
-    legend3.addTo(map4);
-
-    var legend4 = L.control({position: 'topright'});
-
-    legend4.onAdd = function () {
-
-        // Create Div Element and Populate it with HTML
-        var div = L.DomUtil.create('div', 'legend');
-        div.innerHTML += '<b>Legend</b><br />';
-        div.innerHTML += '<i class="legend legend-custom" style="background:red; opacity: 0.5 ;"></i><p>Reservation Area</p>';
-        div.innerHTML += '<i class="legend legend-custom" style="background: #74a9cf; opacity: 0.8 ;"></i><p>River</p>';
-        div.innerHTML += '<i class="legend legend-custom" style="background: purple; opacity: 0.8 ;"></i><p>Urban Area</p>';
-        div.innerHTML += '<i class= "glyphicon glyphicon-map-marker marker-icon-9"</i><p>Fish Facilities</p>';
 
 
-        // Return the Legend div containing the HTML content
-        return div;
-    };
-    // Add Legend to Map
-    legend4.addTo(map6);
 
-    var legend5 = L.control({position: 'topright'});
-    legend5.onAdd = function () {
+            var legend1 = L.control({position: 'topright'});
 
-        // Create Div Element and Populate it with HTML
-        var div = L.DomUtil.create('div', 'legend');
-        div.innerHTML += '<b>Legend</b><br />';
+            // Function that runs when legend is added to map
+            legend1.onAdd = function () {
+
+                // Create Div Element and Populate it with HTML
+                var div = L.DomUtil.create('div', 'legend');
+                div.innerHTML += '<b>Dams of 1964 treaty</b><br />';
+                div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon"></i>';
+
+                // Return the Legend div containing the HTML content
+                return div;
+            };
+            // Add Legend to Map
+            legend1.addTo(map2);
+
+
+            var legend2 = L.control({position: 'topright'});
+
+            // Function that runs when legend is added to map
+            legend2.onAdd = function () {
+
+                // Create Div Element and Populate it with HTML
+                var div = L.DomUtil.create('div', 'legend');
+                div.innerHTML += '<b>Events</b><br />';
+                div.innerHTML += '<i class= "glyphicon glyphicon-bullhorn marker-icon-8">';
+
+                // Return the Legend div containing the HTML content
+                return div;
+            };
+            // Add Legend to Map
+            legend2.addTo(map5);
+
+            var legend3 = L.control({position: 'topright'});
+
+            // Function that runs when legend is added to map
+            legend3.onAdd = function () {
+
+                // Create Div Element and Populate it with HTML
+                var div = L.DomUtil.create('div', 'legend');
+                div.innerHTML += '<b>State/Province</b><br />';
+                div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-1"></i><p>British Columbia</p>';
+                div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-2"></i><p>Idaho</p>';
+                div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-3"></i><p>Montana</p>';
+                div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-4"></i><p>Oregon</p>';
+                div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-5"></i><p>Washington</p>';
+                div.innerHTML += '<i class="glyphicon glyphicon-tint marker-icon-6"></i><p>Wyoming</p>';
+
+
+
+                // Return the Legend div containing the HTML content
+                return div;
+            };
+            // Add Legend to Map
+            legend3.addTo(map4);
+
+            var legend4 = L.control({position: 'topright'});
+
+            legend4.onAdd = function () {
+
+                // Create Div Element and Populate it with HTML
+                var div = L.DomUtil.create('div', 'legend');
+                div.innerHTML += '<b>Legend</b><br />';
+                div.innerHTML += '<i class="legend legend-custom" style="background:red; opacity: 0.5 ;"></i><p>Reservation Area</p>';
+                div.innerHTML += '<i class="legend legend-custom" style="background: purple; opacity: 0.8 ;"></i><p>Urban Area</p>';
+                div.innerHTML += '<i class= "glyphicon glyphicon-star marker-icon-9"</i><p>Fish Facilities</p>';
+
+
+                // Return the Legend div containing the HTML content
+                return div;
+            };
+            // Add Legend to Map
+            legend4.addTo(map6);
+
+            var legend5 = L.control({position: 'topright'});
+            legend5.onAdd = function () {
+
+                // Create Div Element and Populate it with HTML
+                var div = L.DomUtil.create('div', 'legend');
+                div.innerHTML += '<b>Legend</b><br />';
 //        div.innerHTML += '<i class="legend legend-custom" style="background:#74a9cf;opacity: 0.4 ;"</i><p>River</p>';
-        div.innerHTML += '<i class="legend legend-custom" style="background:red; opacity: 0.5 ;"></i><p>Reservation Area</p>';
-        div.innerHTML += '<i class="legend legend-custom" style="background: #74a9cf; opacity: 0.8 ;"></i><p>River</p>';
+                div.innerHTML += '<i class="legend legend-custom" style="background:red; opacity: 0.5 ;"></i><p>Reservation Area</p>';
+                div.innerHTML += '<i class="legend legend-custom" style="background: #74a9cf; opacity: 0.8 ;"></i><p>River</p>';
 
 
 
-        // Return the Legend div containing the HTML content
-        return div;
-    };
-    // Add Legend to Map
-    legend5.addTo(map3)
+                // Return the Legend div containing the HTML content
+                return div;
+            };
+            // Add Legend to Map
+            legend5.addTo(map3)
 
-    L.control.scale({position: 'bottomleft'}).addTo(map);
-    L.control.scale({position: 'bottomleft'}).addTo(map2);
-    L.control.scale({position: 'bottomleft'}).addTo(map3);
-    L.control.scale({position: 'bottomleft'}).addTo(map4);
-    L.control.scale({position: 'bottomleft'}).addTo(map5);
-    L.control.scale({position: 'bottomleft'}).addTo(map6);
+            L.control.scale({position: 'bottomleft'}).addTo(map);
+            L.control.scale({position: 'bottomleft'}).addTo(map2);
+            L.control.scale({position: 'bottomleft'}).addTo(map3);
+            L.control.scale({position: 'bottomleft'}).addTo(map4);
+            L.control.scale({position: 'bottomleft'}).addTo(map5);
+            L.control.scale({position: 'bottomleft'}).addTo(map6);
 
-    var markers = L.markerClusterGroup({
-        maxClusterRadius: 120,
-        iconCreateFunction: function (cluster) {
-            var markers = cluster.getAllChildMarkers();
-            var n = 0;
-            for (var i = 0; i < markers.length; i++) {
-                n += markers[i].number;
+            var markers = L.markerClusterGroup({
+                maxClusterRadius: 120,
+                iconCreateFunction: function (cluster) {
+                    var markers = cluster.getAllChildMarkers();
+                    var n = 0;
+                    for (var i = 0; i < markers.length; i++) {
+                        n += markers[i].number;
+                    }
+                    return L.divIcon({ html: n, className: 'mycluster', iconSize: L.point(40, 40) });
+                },
+                //Disable all of the defaults:
+                spiderfyOnMaxZoom: false, showCoverageOnHover: false, zoomToBoundsOnClick: false
+            });
+            function populate() {
+                for (var i = 0; i < 100; i++) {
+                    var m = L.marker(getRandomLatLng(map6), { title: i });
+                    m.number = i;
+                    markers.addLayer(m);
+                }
+                return false;
             }
-            return L.divIcon({ html: n, className: 'mycluster', iconSize: L.point(40, 40) });
-        },
-        //Disable all of the defaults:
-        spiderfyOnMaxZoom: false, showCoverageOnHover: false, zoomToBoundsOnClick: false
-    });
-    function populate() {
-        for (var i = 0; i < 100; i++) {
-            var m = L.marker(getRandomLatLng(map6), { title: i });
-            m.number = i;
-            markers.addLayer(m);
-        }
-        return false;
-    }
-    function populateRandomVector() {
-        for (var i = 0, latlngs = [], len = 20; i < len; i++) {
-            latlngs.push(getRandomLatLng(map6));
-        }
-        var path = L.polyline(latlngs);
-        map6.addLayer(path);
-    }
-    function getRandomLatLng(map) {
-        var bounds = map.getBounds(),
-            southWest = bounds.getSouthWest(),
-            northEast = bounds.getNorthEast(),
-            lngSpan = northEast.lng - southWest.lng,
-            latSpan = northEast.lat - southWest.lat;
-        return L.latLng(
-            southWest.lat + latSpan * Math.random(),
-            southWest.lng + lngSpan * Math.random());
-    }
-    populate();
-    map6.addLayer(markers);
-    var shownLayer, polygon;
-    function removePolygon() {
-        if (shownLayer) {
-            shownLayer.setOpacity(1);
-            shownLayer = null;
-        }
-        if (polygon) {
-            map6.removeLayer(polygon);
-            polygon = null;
-        }
-    };
-    markers.on('clustermouseover', function (a) {
-        removePolygon();
-        a.layer.setOpacity(0.2);
-        shownLayer = a.layer;
-        polygon = L.polygon(a.layer.getConvexHull());
-        map.addLayer(polygon);
-    });
-    markers.on('clustermouseout', removePolygon);
-    map6.on('zoomend', removePolygon);
+            function populateRandomVector() {
+                for (var i = 0, latlngs = [], len = 20; i < len; i++) {
+                    latlngs.push(getRandomLatLng(map6));
+                }
+                var path = L.polyline(latlngs);
+                map6.addLayer(path);
+            }
+            function getRandomLatLng(map) {
+                var bounds = map.getBounds(),
+                    southWest = bounds.getSouthWest(),
+                    northEast = bounds.getNorthEast(),
+                    lngSpan = northEast.lng - southWest.lng,
+                    latSpan = northEast.lat - southWest.lat;
+                return L.latLng(
+                    southWest.lat + latSpan * Math.random(),
+                    southWest.lng + lngSpan * Math.random());
+            }
+            populate();
+            map6.addLayer(markers);
+            var shownLayer, polygon;
+            function removePolygon() {
+                if (shownLayer) {
+                    shownLayer.setOpacity(1);
+                    shownLayer = null;
+                }
+                if (polygon) {
+                    map6.removeLayer(polygon);
+                    polygon = null;
+                }
+            };
+            markers.on('clustermouseover', function (a) {
+                removePolygon();
+                a.layer.setOpacity(0.2);
+                shownLayer = a.layer;
+                polygon = L.polygon(a.layer.getConvexHull());
+                map.addLayer(polygon);
+            });
+            markers.on('clustermouseout', removePolygon);
+            map6.on('zoomend', removePolygon);
+
 
 
 </script>
